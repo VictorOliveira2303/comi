@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="COMI - Monitoramento de Máquinas Industriais">
+    <title>COMI - Monitoramento de Máquinas Industriais</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="shortcut icon" href="img/comi80x80.png" type="image/x-icon">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="img/comi80x80.png" alt="Logo COMI">
+            </div>
+            <p class="tagline">Monitoramento de Máquinas Industriais em Tempo Real</p>
+        </div>
+    </header>
+
+    <!-- Navegação -->
+    <nav>
+        <ul>
+            <li><a href="#controle">Controle de Máquinas</a></li>
+            <li><a href="#eventos">Eventos da Empresa</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+        </ul>
+    </nav>
+
+    <!-- Seção de Monitoramento de Máquinas -->
+    <section id="controle" class="controle">
+        <h2>Monitoramento de Máquinas</h2>
+        <p>Acompanhe em tempo real as condições das máquinas da sua linha de produção. Aqui você encontra dados como status, temperatura, velocidade e produção.</p>
+
+        <!-- Cards de Máquinas -->
+        <div class="maquinas-container">
+            <div class="maquina-card">
+                <h3>Misturador de Massa</h3>
+                <img src="img/misturadorDeMassa.jpg" alt="Misturador de Massa">
+                <p><strong>Status:</strong> <span class="status ativo">Ativo</span></p>
+                <p><strong>Temperatura:</strong> 75°C</p>
+                <p><strong>Velocidade:</strong> 200 RPM</p>
+                <p><strong>Produção Atual:</strong> 500 kg/h</p>
+                <p><strong>Última Manutenção:</strong> 15/10/2024</p>
+                <p><strong>Aviso:</strong> <span class="aviso">Nenhum problema detectado</span></p>
+            </div>
+
+            <div class="maquina-card">
+                <h3>Máquina de Corte de Massa</h3>
+                <img src="img/maquinaDeCorte.jpg" alt="Máquina de Corte">
+                <p><strong>Status:</strong> <span class="status inativo">Inativo</span></p>
+                <p><strong>Temperatura:</strong> 0°C</p>
+                <p><strong>Velocidade:</strong> 0 RPM</p>
+                <p><strong>Produção Atual:</strong> 0 kg/h</p>
+                <p><strong>Última Manutenção:</strong> 12/10/2024</p>
+                <p><strong>Aviso:</strong> <span class="aviso alerta">Máquina inativa por mais de 2 horas</span></p>
+            </div>
+
+            <div class="maquina-card">
+                <h3>Embaladora de Produtos</h3>
+                <img src="img/embaladoraDeProdutos.jpg" alt="Embaladora de Produtos">
+                <p><strong>Status:</strong> <span class="status alerta">Alerta</span></p>
+                <p><strong>Temperatura:</strong> 95°C</p>
+                <p><strong>Velocidade:</strong> 180 RPM</p>
+                <p><strong>Produção Atual:</strong> 300 pacotes/h</p>
+                <p><strong>Última Manutenção:</strong> 10/10/2024</p>
+                <p><strong>Aviso:</strong> <span class="aviso alerta">Temperatura excedendo o limite seguro</span></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Eventos da Empresa -->
+    <section id="eventos" class="eventos">
+        <h2>Eventos Recentes da Empresa</h2>
+        <ul>
+            <li><strong>Falha no Sistema de Energia:</strong> Houve uma falha na rede elétrica durante a noite. Todos os sistemas foram restaurados às 08:00 de hoje.</li>
+            <li><strong>Manutenção Agendada no Armazém:</strong> Manutenção agendada para a linha de transporte no armazém. Início às 18:00.</li>
+            <li><strong>Interrupção na Produção:</strong> Produção interrompida por 2 horas devido a problemas no sistema de controle de qualidade.</li>
+            <li><strong>Reunião de Treinamento de Segurança:</strong> Treinamento de segurança para todos os operadores de máquinas. Data: 10/11/2024.</li>
+            <li><strong>Visita de Inspeção:</strong> Inspeção de segurança realizada pela autoridade sanitária. Não foram encontrados problemas.</li>
+        </ul>
+    </section>
+
+    <!-- Seção Sobre -->
+    <section id="sobre">
+        <h2>Sobre a COMI</h2>
+        <p>A COMI oferece soluções inovadoras para o monitoramento das condições das máquinas industriais, com foco em segurança, eficiência e prevenção de falhas. Nossa plataforma fornece dados precisos e em tempo real sobre o status das máquinas, como temperatura, velocidade e produção, permitindo o acompanhamento constante do desempenho da sua linha de produção. Além disso, a COMI realiza o gerenciamento de eventos dentro da empresa, notificando sobre qualquer incidente ou falha, garantindo que todos os problemas sejam tratados rapidamente. Com alertas inteligentes e relatórios detalhados, a COMI ajuda a otimizar processos, reduzir paradas inesperadas e prolongar a vida útil dos equipamentos, garantindo operações mais seguras e eficientes.</p>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 COMI - Controle de Máquinas Industriais. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+<script src="main.js"></script>
+</html>

@@ -1,0 +1,269 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #e60000;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    transition: all 0.3s ease-in-out;
+}
+
+header:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.tagline {
+    font-size: 1.2rem;
+    font-weight: 600;
+    opacity: 0.85;
+    letter-spacing: 0.5px;
+}
+
+/* Navegação */
+nav {
+    background-color: #b30000;
+    padding: 12px 0;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+nav:hover {
+    background-color: #a20000;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff6666;
+    transform: scale(1.05);
+}
+
+/* Seção Geral */
+section {
+    padding: 40px 20px;
+    background-color: #fff;
+    margin-top: 40px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+}
+
+h2 {
+    font-size: 2rem;
+    color: #b30000;
+    margin-bottom: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* Cards das Máquinas */
+.maquinas-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+/* Card das Máquinas */
+.maquina-card {
+    background-color: #fff;
+    border: 2px solid #b30000;
+    border-radius: 10px;
+    padding: 20px;
+    width: 280px;
+    margin: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.maquina-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.maquina-card img {
+    width: 140px;
+    height: 140px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.maquina-card img:hover {
+    transform: scale(1.1);
+}
+
+.maquina-card h3 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #b30000;
+    margin-bottom: 10px;
+}
+
+.status {
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+.status.ativo {
+    color: #4CAF50;
+}
+
+.status.inativo {
+    color: #9E9E9E;
+}
+
+.status.alerta {
+    color: #FF9800;
+}
+
+.aviso.alerta {
+    color: #D32F2F;
+    font-weight: bold;
+}
+
+/* Eventos */
+.eventos ul {
+    list-style: none;
+    padding: 0;
+}
+
+.eventos li {
+    background-color: #ffebeb;
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.eventos li:hover {
+    background-color: #fce8e8;
+    transform: translateX(5px);
+}
+
+/* Rodapé */
+footer {
+    background-color: #201e1e;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+footer:hover {
+    background-color: #181818;
+}
+
+footer p {
+    font-size: 1rem;
+    color: #fff;
+}
+
+/* Seção Sobre */
+#sobre {
+    background-color: #b30000;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+    transition: transform 0.3s ease;
+}
+
+#sobre:hover {
+    transform: translateY(-5px);
+}
+
+#sobre h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #181818;
+}
+
+#sobre p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .maquinas-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .maquina-card {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+}
